@@ -7,7 +7,7 @@ DIR := ${CURDIR}
 
 IMAGE_NAME := thunderspb/ruby
 DOCKER := $(shell which docker)
-RUBY_VERSIONS := 2.5.1 2.6.6
+RUBY_VERSIONS := 2.5.1 2.6.6 2.7.2
 
 build:
 	$(DOCKER) build --build-arg RUBY_VERSION=$(RUBY_VER) --tag $(TAG) .
